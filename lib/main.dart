@@ -8,8 +8,12 @@ class MyApp extends StatelessWidget {
     // ignore: todo
     // TODO: implement build
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: false,  // disable debug banner 
+      
+      
       // Project Start
+      
+
       title: 'MobiTech',
       home: Scaffold(
         appBar: AppBar(         // AppBar widget Creation
@@ -20,10 +24,11 @@ class MyApp extends StatelessWidget {
           ],                    // IconButton takes button and function
           centerTitle: true,    // Appbar Center the Text
           elevation: 50,       // AppBar shadow
+          leading: IconButton(icon: Icon(
+            Icons.security), onPressed: (){}),
+          brightness: Brightness.light,
         ),
       ),
-      
-      
       
       
       
